@@ -1,0 +1,27 @@
+print("**********************************************Welcome To Candy Shop Country***************************************************")
+print("Experience The Sweetness, Now")
+print("https://png.pngtree.com/element_our/png/20180823/candy-logo-design-template-vector-png_62736.jpg")
+candies=1000
+price=5
+while True:
+    print("Do you want to buy some delicous candy")
+    cont = input("yes/no >")
+    print("*************************************************************************************************************************")
+    if cont == "yes":
+        print(" ☺ Great!!!")
+        c=int(input("How many candies do you want?"))
+        if(c<=candies):
+            T=c*price
+            print("You have purchased",c,"candies.")
+            print("Your grand total is = ₹",T)
+            print("Remaining candies:",candies-c)
+            print("Thank you for visiting")
+        else:
+            print("Sorry!! We don't have enough candies.")
+            print("Thank you for visiting")
+        break
+        candies=candies-c
+    else :
+        print("☹")
+        print("bye")
+        break
